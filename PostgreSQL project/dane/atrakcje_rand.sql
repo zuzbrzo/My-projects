@@ -1,0 +1,11 @@
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('kino', TRUE, 'W ramach wyjazdu - kino' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('teatr', TRUE, 'W ramach wyjazdu - teatr' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('muzeum', TRUE, 'W ramach wyjazdu - muzeum' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('basen', TRUE, 'W ramach wyjazdu - basen' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('kregle', TRUE, 'W ramach wyjazdu - kregle' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('dyskoteka', FALSE, 'W ramach wyjazdu - dyskoteka' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('bar', FALSE, 'W ramach wyjazdu - bar' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('zoo', FALSE, 'W ramach wyjazdu - zoo' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('lot balonem', TRUE, 'W ramach wyjazdu - lot balonem' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('zwiedzanie', TRUE, 'W ramach wyjazdu - zwiedzanie' );
+INSERT INTO atrakcje (atrakcja,czy_dla_dzieci ,opis_atrakcji) VALUES ('sesja zdjeciowa', TRUE, 'W ramach wyjazdu - sesja zdjeciowa' );

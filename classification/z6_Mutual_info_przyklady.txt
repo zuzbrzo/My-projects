@@ -1,0 +1,107 @@
+﻿cd "C:\Users\zuzbrzo\studia\sem5\zps\ZPS2020"
+
+# redukcja wymiaru na zbiorze adult (liczba klas - 2, wymiar - 14)
+
+python scripts\z6_Mutual_information.py --input-dir datasets_prepared\adult\ --output-dir datasets_prepared\Mutual_info\adult_3d\ --n 3
+python scripts\z6_Mutual_information.py --input-dir datasets_prepared\adult\ --output-dir datasets_prepared\Mutual_info\adult_5d\ --n 5
+
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\Mutual_info\adult_3d
+
+# działanie klasyfikatorów przed i po redukcji wymiaru
+
+# LDA
+python scripts\z7_lda.py --input-dir datasets_prepared\adult
+python scripts\z7_lda.py --input-dir datasets_prepared\Mutual_info\adult_5d
+python scripts\z7_lda.py --input-dir datasets_prepared\Mutual_info\adult_3d
+
+# Naive Bayes
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\adult
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\Mutual_info\adult_3d
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\Mutual_info\adult_5d
+
+
+
+
+# QDA
+python scripts\z7_qda.py --input-dir datasets_prepared\adult
+python scripts\z7_qda.py --input-dir datasets_prepared\Mutual_info\adult_5d
+python scripts\z7_qda.py --input-dir datasets_prepared\Mutual_info\adult_3d
+
+
+# KNN
+python scripts\z7_knn.py --input-dir datasets_prepared\adult
+python scripts\z7_knn.py --input-dir datasets_prepared\Mutual_info\adult_5d
+python scripts\z7_knn.py --input-dir datasets_prepared\Mutual_info\adult_3d
+
+
+# redukcja wymiaru na zbiorze glass (liczba klas - 7, wymiar - 10)
+
+python scripts\z6_anova_feature_selection.py --input-dir datasets_prepared\glass\ --output-dir datasets_prepared\Mutual_info\glass_3d\ --n 3
+python scripts\z6_anova_feature_selection.py --input-dir datasets_prepared\glass\ --output-dir datasets_prepared\Mutual_info\glass_5d\ --n 5
+
+
+# działanie klasyfikatorów przed i po redukcji wymiaru
+
+# LDA
+python scripts\z7_lda.py --input-dir datasets_prepared\glass
+python scripts\z7_lda.py --input-dir datasets_prepared\Mutual_info\glass_5d
+python scripts\z7_lda.py --input-dir datasets_prepared\Mutual_info\glass_3d
+
+# Naive Bayes
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\glass
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\Mutual_info\glass_3d
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\Mutual_info\adult_5d
+
+# QDA
+python scripts\z7_qda.py --input-dir datasets_prepared\glass
+python scripts\z7_qda.py --input-dir datasets_prepared\Mutual_info\glass_5d
+python scripts\z7_qda.py --input-dir datasets_prepared\Mutual_info\glass_3d
+
+# KNN
+python scripts\z7_knn.py --input-dir datasets_prepared\glass
+python scripts\z7_knn.py --input-dir datasets_prepared\Mutual_info\glass_5d
+python scripts\z7_knn.py --input-dir datasets_prepared\Mutual_info\glass_3d
+
+
+# redukcja wymiaru na zbiorze mushroom (liczba klas - 3, wymiar - 42)
+
+python scripts\z6_Mutual_information.py --input-dir datasets_prepared\connect4\ --output-dir datasets_prepared\Mutual_info\connect4_3d\ --n 3
+python scripts\z6_Mutual_information.py --input-dir datasets_prepared\connect4\ --output-dir datasets_prepared\Mutual_info\connect4_5d\ --n 5
+
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\Mutual_info\connect4_3d
+
+# działanie klasyfikatorów przed i po redukcji wymiaru
+
+# LDA
+python scripts\z7_lda.py --input-dir datasets_prepared\connect4
+python scripts\z7_lda.py --input-dir datasets_prepared\Mutual_info\connect4_3d
+
+# Naive Bayes
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\connect4
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\Mutual_info\connect4_3d
+python scripts\z7_naive_bayes.py --input-dir datasets_prepared\Mutual_info\connect4_5d
+
+# QDA
+python scripts\z7_qda.py --input-dir datasets_prepared\connect4
+python scripts\z7_qda.py --input-dir datasets_prepared\Mutual_info\connect4_5d
+python scripts\z7_qda.py --input-dir datasets_prepared\Mutual_info\connect4_3d
+
+# KNN
+python scripts\z7_knn.py --input-dir datasets_prepared\connect4
+python scripts\z7_knn.py --input-dir datasets_prepared\Mutual_info\connect4_5d
+python scripts\z7_knn.py --input-dir datasets_prepared\Mutual_info\connect4_3d
+
+
+
+
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\Mutual_info\adult_3d
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\ANOVA\adult_3d
+
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\Mutual_info\glass_3d
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\ANOVA\glass_3d
+
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\Mutual_info\wine_3d
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\ANOVA\wine_3d
+
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\Mutual_info\connect4_3d
+python scripts_learn\plot3dpoints.py --input-dir datasets_prepared\ANOVA\connect4_3d
