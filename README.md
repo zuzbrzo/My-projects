@@ -5,4 +5,3 @@ My projects from bachelor's degree contain:
 - deterministic modelling
 - docs and scripts for data dim reduction before classification
 - text analysis in userform via VBA in MS Excel (in progress)
-- my bachelor's thesis (in progress)
