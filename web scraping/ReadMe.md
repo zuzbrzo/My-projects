@@ -1,0 +1,1 @@
+Contains python files for web scraping, later used to scrap data from page justjoin.it for machine learning project at university (prediction of salary).
