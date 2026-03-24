@@ -1,4 +1,5 @@
-
+- Master's thesis in English and in Polish
+- Bachelor's thesis in Polish
 - Analysis of yeast gene mapping
 - Text game project in Python + UML
 - PostgreSQL "travel agency" project and app in Shiny 
