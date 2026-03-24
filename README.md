@@ -1,4 +1,4 @@
-My projects from bachelor's degree contain:
+
 - Analysis of yeast gene mapping
 - Text game project in Python + UML
 - PostgreSQL "travel agency" project and app in Shiny 
